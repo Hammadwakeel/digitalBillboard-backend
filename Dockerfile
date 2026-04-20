@@ -1,7 +1,7 @@
-# Use a lightweight Python base image
-FROM python:3.9-slim
+# Change from 3.9-slim to 3.11-slim
+FROM python:3.11-slim
 
-# Set up a new user 'user' with UID 1000 (Required for Hugging Face)
+# Set up the same user permissions as before
 RUN useradd -m -u 1000 user
 USER user
 ENV PATH="/home/user/.local/bin:${PATH}"

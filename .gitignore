@@ -30,4 +30,6 @@ yarn-error.log*
 
 # System Files
 .DS_Store
-Thumbs.db
+Thumbs.db.client_secret_*.json
+.gcp-credentials.json
+.client_secret_*.json
